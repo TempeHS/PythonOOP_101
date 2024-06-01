@@ -1,68 +1,26 @@
-# Python Fundamentals
-## Lectures - Term 1
-1. [Functions & Variables](0-FunctionsVariables/0-FunctionsVariables.md)
-2. [Conditionals](1-Conditionals/1-Conditionals.md)
-3. [Loops](2-Loops/2-Loops.md)
-4. [Debugging](Debugging/Debugging.md)
-5. [Exceptions](3-Exceptions/3-Exceptions.md)
-6. [Libraries](4-Libraries/4-Libraries.md)
-7. [Unit Tests](5-UnitTests/5-UnitTests.md)
-8. [File IO](6-FileIO/6-FileIO.md)
+# Python OOP Fundamentals
 
-## Lectures - Term 2
+## 1. Classes and Objects
+A class is a blueprint or template that defines the properties and behavior of an object. An Object is an instances of a class, created using the class definition.
 
-2. [Object Oriented Paradigm](8-OOP/8-OOP.md)
+## 2. Encapsulation
+Encapsulation is the concept of hiding an object's implementation details from the outside world and only exposing the necessary information through public methods.
+Encapsulation helps protect the object's internal state from external interference and misuse.
+In Python, you can achieve encapsulation using private attributes and methods, denoted by a double underscore prefix (__).
 
-## Lectures - Optional
-1. [Regular Expressions](7-RegularExpressions/7-RegularExpressions.md)
-2. [Et Cetera](9-EtCetera/9-EtCetera.md)
+## 3. Inheritance
+Inheritance is a mechanism that allows a class to inherit properties and methods from another class, called the superclass or parent class.
+The class that inherits is called the subclass or child class.
+The child class inherits all the fields and methods of the parent class and can also add new fields and methods or override the ones inherited from the parent class.
+Inheritance promotes code reuse and helps create a hierarchical structure.
 
----
+## 4. Polymorphism
+Polymorphism is the ability of an object to take on multiple forms.
+It enables you to write generic code that can work with objects of multiple types, as long as they share a common interface.
+A common way to achieve polymorphism is method overriding.
+Method overriding is when a subclass provides a specific implementation of a method that is already defined in its parent class.
 
-# Commonly used commands
-## Bash Commands 
-1. `clear` clear the terminal window
-2. `ls` list files and folders in the active folder
-3. `cp [source name] [destination name]` copy a file or folder, example `cp hello.py goodbye.py` copies the file `hello.py` and saves it as `goodbye.py`
-4. `mv [target file] [new name]` rename a file or folder, example `mv hello.py hi.py` renames the file `hello.py` to `hi.py`
-5. `rm [target file]` removes (deletes) the target file, example `rm hi.py`
-6. `mkdir [name]` makes a new folder (directory), example `mkdir myFolder`
-7. `rmdir [child folder name]` removes a child folder (directory) of the active folder, example `rmdir myFolder`
-7. `cd [child folder name] changes the active folder, example `cd myFolder`
-8. `..` move to the parent folder, example `cd ..`moves the active folder to the parent folder
-
-## Python Commands
-1. `code hello.py` create a python file call **hello** and begin coding into the file
-2. `python hello.py` execute the python program
-
-## Git commands
-1. Pull latest code from the repository
-
-		git pull
-2. Add indoor.py to the changes to be committed
-
-		git add [file name]
-3. Add all chnaged files to the changes to be committed
-
-		git add -A
-3. Commit all changes in the REPO with comments
-
-		git commit -m “My comment“
-4. Push all changes to the REPO
-
-		git push 
-
-# How to setup your workspace
-1. Fork this repository
-![](images/fork.png "")
-2. Correctly name your new reposity
-![](images/fork2.png "")
-3. Open either a virtual or local itegrated developer environment
-- Run a virtual codespace
-![](images/codespace.png "")
-_Wait until you see the README.md so your CodeSpace is fully configured_
-- Run a local Visual Code
-![](images/codespace3.png "")
-_Make sure all extensions have loaded_
-
-
+## 5. Abstraction
+Abstraction is the concept of showing only the necessary information to the outside world while hiding unnecessary details.
+Abstraction helps to simplify complex systems and focus on the essential features.
+In Python, you can achieve abstraction using abstract base classes (ABC) and abstract methods.
